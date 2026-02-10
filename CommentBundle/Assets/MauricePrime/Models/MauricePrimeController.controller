@@ -1,13 +1,13 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1102 &-7859859778872404195
+--- !u!1102 &-1801784486760421345
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Armature|dance1
+  m_Name: Armature|dance2
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -20,7 +20,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7167534437966442236, guid: 26e190e57da5b2c09bef72bac735265c,
+  m_Motion: {fileID: -3944243679201702876, guid: 26e190e57da5b2c09bef72bac735265c,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 
@@ -59,8 +59,8 @@ AnimatorStateMachine:
   m_Name: Base Layer
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: -7859859778872404195}
-    m_Position: {x: 330, y: 110, z: 0}
+    m_State: {fileID: -1801784486760421345}
+    m_Position: {x: 360, y: 120, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -70,4 +70,4 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: -7859859778872404195}
+  m_DefaultState: {fileID: -1801784486760421345}

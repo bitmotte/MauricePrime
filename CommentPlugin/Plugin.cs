@@ -3,6 +3,8 @@ using System.Reflection;
 using BepInEx;
 using BepInEx.Logging;
 using HarmonyLib;
+using UnityEngine;
+using UnityEngine.AddressableAssets;
 using UnityEngine.SceneManagement;
 
 namespace CommentMod;
@@ -11,7 +13,7 @@ namespace CommentMod;
 public class Plugin : BaseUnityPlugin
 {
     internal static new ManualLogSource Logger;
-    
+
     private void Awake()
     {
         // Plugin startup logic
@@ -26,6 +28,8 @@ public class Plugin : BaseUnityPlugin
 
     private void OnSceneLoad(Scene scene, LoadSceneMode mode)
     {
-        BundleTool.Load("MauricePrime.bundle");
+        GameObject checker = new("LoadOnBind");
+        checker.transform.parent = null;
+        checker.AddComponent<LoadOnBind>();
     }
 }

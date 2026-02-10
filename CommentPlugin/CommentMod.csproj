@@ -28,7 +28,6 @@
     <PackageReference Include="Ultrakill.GameLibs-Stripped" Version="0.0.16-d" />
 
     <EmbeddedResource Include="resources/MauricePrime.bundle" />
-    <EmbeddedResource Include="resources/cool.txt" />
   </ItemGroup>
   
   <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
