@@ -17,6 +17,8 @@ class LoadOnBind : MonoBehaviour
                 prime.transform.position = player.transform.position;
             }
 
+            prime.AddComponent<EvilGoon.EvilGoonController>();
+
             bundle.Unload(false);
         }
     }
